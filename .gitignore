@@ -1,4 +1,17 @@
-# Node / Next.js
+
+That completely replaces `.gitignore` with the correct content and **blows past any lock** nano thought it had. No editor involved.
+
+You’re done after that — you can go straight to:
+
+```bash
+git status
+
+
+
+cat << 'EOF' > .gitignore
+cat << 'EOF' > .gitignore
+Node / Next.js
+
 node_modules/
 .next/
 out/
@@ -7,7 +20,8 @@ dist/
 .env.local
 .env.*.local
 
-# Logs
+Logs
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -15,10 +29,15 @@ pnpm-debug.log*
 logs/
 *.log
 
-# OS
-.DS_Store
+OS / editor
 
-# Unsafe area service (subproject)
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+Unsafe area service (backend)
+
 unsafe-area-service/node_modules/
 unsafe-area-service/dist/
 unsafe-area-service/*.log

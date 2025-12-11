@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["@types/google.maps"],
-    "target": "ES2022",
+    "target": "ESNext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -24,6 +23,9 @@
         "./*"
       ]
     },
+    "types": [
+      "@types/google.maps"
+    ],
     "plugins": [
       {
         "name": "next"
@@ -38,6 +40,8 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    ".next",
+    "unsafe-area-service"
   ]
 }
