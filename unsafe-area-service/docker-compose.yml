@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: unsafe-areas-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: unsafe_areas
+      POSTGRES_USER: unsafe_user
+      POSTGRES_PASSWORD: unsafe_password
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./src/db/migrations:/docker-entrypoint-initdb.d
+    ports:
+      - "5433:5432" # expose 5433 on host to avoid clashing with other Postgres
+
+  unsafe-area-service:
+    build: .
+    container_name: unsafe-area-service
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: unsafe_areas
+      DB_USER: unsafe_user
+      DB_PASSWORD: unsafe_password
+      DB_SSL: "false"
+      CORS_ORIGIN: "*"
+    depends_on:
+      - db
+    ports:
+      - "4000:4000"
+
+volumes:
+  db_data:

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "rt_1765285255940_fgwyby",
+    "latitude": -33.94,
+    "longitude": 18.58,
+    "radiusMeters": 300,
+    "category": "ACCIDENT",
+    "subCategory": "MAJOR_COLLISION",
+    "severity": "HIGH",
+    "sourceType": "OFFICIAL",
+    "title": "Major collision on Jakes Gerwel",
+    "summary": "Major collision reported near Jakes Gerwel and Jakkalsvlei, lanes blocked",
+    "sourceName": "Cape Town Traffic",
+    "occurredAt": "2025-12-09T08:15:00Z",
+    "firstSeenAt": "2025-12-09T13:00:55.940Z",
+    "lastUpdatedAt": "2025-12-09T13:00:55.940Z",
+    "expiresAt": "2025-12-09T13:30:55.940Z",
+    "isActive": false
+  }
+]

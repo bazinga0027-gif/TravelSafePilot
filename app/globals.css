@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { --bg: #0b0c10; --fg: #e5e7eb; --card:#111318; --border:#2b2f36; --btn-bg:#151921; --btn-fg:#e5e7eb; }
+html, body, #__next { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif; }
+a { color: #8ab4f8; text-decoration: none; }
+main { padding: 2rem; max-width: 960px; margin: 0 auto; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 1rem; padding: 1rem; }
+.badge { display:inline-block; padding:.2rem .5rem; border-radius:.4rem; border:1px solid #333; background:#151921; font-size:.8rem; }
+
+/* Light theme when toggled */
+[data-theme="light"] { --bg:#f6f7fb; --fg:#111318; --card:#ffffff; --border:#e5e7eb; --btn-bg:#f1f5f9; --btn-fg:#111318; }
+
+/* Make the web component span the container nicely */
+gmp-place-autocomplete { width: 100%; border-radius: 12px; }

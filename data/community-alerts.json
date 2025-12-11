@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ca_1765281160582_7vzbi3",
+    "latitude": -33.944,
+    "longitude": 18.581,
+    "intersectionName": "Jakes Gerwel Dr & Jakkalsvlei Ave",
+    "suburb": "Bonteheuwel",
+    "city": "Cape Town",
+    "province": "Western Cape",
+    "riskType": "SMASH_AND_GRAB",
+    "summary": "Smash-and-grab hotspot at Jakes Gerwel Dr & Jakkalsvlei Ave, Bonteheuwel (3 recent incidents). Community alert – use extra caution.",
+    "sourceType": "COMMUNITY",
+    "verificationStatus": "UNVERIFIED",
+    "incidentCount": 3,
+    "firstReportedAt": "2025-12-09T11:52:40.582Z",
+    "lastReportedAt": "2025-12-09T11:52:40.582Z",
+    "expiresAt": "2026-01-08T11:52:40.582Z",
+    "riskScore": 10,
+    "isActive": true,
+    "partnerName": "Bryan Storrier",
+    "partnerOrganisation": "BCSG"
+  }
+]

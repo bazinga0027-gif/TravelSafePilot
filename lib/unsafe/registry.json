@@ -1,0 +1,18 @@
+[
+  {
+    "id": "jhb-hillbrow",
+    "name": "Hillbrow",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "reason": "High violent crime rate; persistent safety advisories",
+    "permanent": true
+  },
+  {
+    "id": "jhb-berea",
+    "name": "Berea",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "reason": "Consistent reports of violent crime and muggings",
+    "permanent": true
+  }
+]
